@@ -1,0 +1,449 @@
+/*****************************************/
+/******************主界面****************/
+/****************************************/
+
+QWidget
+{
+    selection-background-color:#3daee9;
+    selection-color: #eff0f1;
+    background-clip: border;
+    border-image: none;
+    border: 0px transparent black;
+    outline: 0;
+}
+
+QWidget#widget_title
+{
+    color: #e7e6e6;
+    background-color: #203864;    
+    max-height: 72px;
+    min-height: 72px;
+}
+
+QWidget#widget_title QPushButton
+{
+    color: transparent;
+    background-color: transparent;   
+	max-width: 25px;
+    min-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+}
+
+QWidget#widget_main_nav
+{
+    color: #eff0f1;
+    background-color: #203864;  
+	max-height: 38px;
+    min-height: 38px;
+}
+
+QWidget#widget_main_nav QPushButton
+{
+    font-size: 12pt;  
+	qproperty-iconSize: 30px 30px;
+	max-width: 150px;
+    min-width: 150px;
+}
+
+QWidget#widget_sub_nav
+{
+    color: #eff0f1;
+    background-color: #001239;
+	max-width: 140px;
+    min-width: 140px;
+    min-height: 600px;
+}
+
+QWidget#widget_sub_nav QPushButton
+{
+	max-height: 25px;
+    min-height: 25px;
+}
+
+QWidget#widget_mainWindow
+{
+    color: #eff0f1;
+    background-color: #001239;
+}
+
+QPushButton 
+{
+    font-family: "Microsoft YaHei"; 
+    color: #deebf7;
+    font-size: 12pt; 
+}
+
+.QPushButton:disabled
+{
+    border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    color: #c8c8c8;
+	background-color: #7c7c9f;
+}
+
+.QPushButton:hover
+{
+    border-width: 1px;
+    border-color: #53c0ef;
+    border-style: solid;
+    color: #53c0ef;
+}
+
+.QPushButton:pressed
+{
+    background-color: #4F6FA2;
+    padding-top: -15px;
+    padding-bottom: -17px;
+    border-radius: 2px;
+}
+
+QPushButton#pushButton_minimize
+{
+    border-image: url(":/img/images/minus.png");
+}
+
+QPushButton#pushButton_maximize
+{
+    border-image: url(":/img/images/maximize.png");
+}
+
+QPushButton#pushButton_close
+{
+    border-image: url(":/img/images/close.png");
+}
+
+QPushButton#pushButton_main_home
+{
+    qproperty-icon: url(":/img/images/home.png") off, url(":/img/images/home.png") on;
+}
+
+QPushButton#pushButton_main_model
+{
+    qproperty-icon: url(":/img/images/design.png") off, url(":/img/images/design.png") on;
+}
+
+QPushButton#pushButton_main_monitor
+{
+    qproperty-icon: url(":/img/images/vigilance.png") off, url(":/img/images/vigilance.png") on;
+}
+
+QPushButton#pushButton_main_optimize
+{
+    qproperty-icon: url(":/img/images/pie-chart.png") off, url(":/img/images/pie-chart.png") on;
+}
+
+QPushButton#pushButton_main_tool
+{
+    qproperty-icon: url(":/img/images/settings.png") off, url(":/img/images/settings.png") on;
+	max-width: 80px;
+    min-width: 80px;
+}
+
+QPushButton#pushButton_main_help
+{
+    qproperty-icon: url(":/img/images/info.png") on;  
+	max-width: 80px;
+    min-width: 80px;
+}
+
+
+QLabel
+{
+    font-family: "Microsoft YaHei"; 
+    color: #e7e6e6;
+}
+
+QLabel#label
+{
+	color: transparent;
+    background-color: #203864;
+	max-height: 10px;
+    min-height: 10px;
+}
+
+QLabel#label_logo
+{
+	color: transparent;
+    background-color: transparent;
+	border-image: url(":/img/images/SJTU_logo1.png");
+	max-width: 210px;
+    min-width: 210px;
+    max-height: 70px;
+    min-height: 70px;	
+}
+
+QLabel#label_title
+{
+	font-size: 18pt; 
+}
+
+QLabel#label_system_time
+{
+	max-width: 160px;
+    min-width: 160px;
+    max-height: 25px;
+    min-height: 25px;	
+	font-size: 9pt; 
+}
+
+QMessageBox
+{
+    color: #000000;
+}
+
+QMessageBox QLabel
+{
+    color: #000000;
+}
+
+QMessageBox QPushButton
+{
+    color: #000000;
+}
+
+/*****************************************/
+/**********分馏塔优化界面Form_DC**********/
+/*****************************************/
+QWidget#JJSH_Form_DC_Optimize
+{
+    background-color: #001239;
+    min-width: 1140px;
+    min-height: 600px;
+}
+
+QWidget#JJSH_Form_DC_Optimize QLabel#label_7
+{
+    min-width: 6px;
+	max-width: 6px;
+	background-color: #001239;
+}
+
+QWidget#JJSH_Form_DC_Optimize QLabel#label_8
+{
+    min-width: 6px;
+	max-width: 6px;
+	background-color: #001239;
+}
+
+QFrame#frame_DC_picture 
+{
+	border-image: url(":/img/images/DC_process.png");
+	min-width: 880px;
+	min-height: 600px;
+}
+
+QFrame#frame_DC_picture QLabel
+{
+	color: #00ff00;
+	font-size: 7pt; 
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_DC_picture QPushButton
+{
+	color: #00ff00;
+	font-size: 7pt; 
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_DC_control
+{
+	color: #e7e6e6;
+    background-color: #001239;
+	max-width: 250px;
+    min-width: 250px;
+    min-height: 600px;
+}
+
+
+QFrame#frame_DC_control QPushButton
+{
+	color: #e7e6e6;
+	font-size: 9pt; 
+	max-height: 40px;
+    min-height: 40px;
+	min-width: 100px;
+}
+
+QFrame#frame_DC_control QLabel
+{
+	font-size: 9pt; 
+	max-height: 25px;
+    min-height: 25px;
+	color: #e7e6e6;
+    background-color: #001239;
+}
+
+QFrame#frame_DC_control QFrame#frame_N100
+{
+	font-size: 9pt; 
+	max-height: 80px;
+    min-height: 80px;
+	color: #e7e6e6;
+    background-color: #001239;
+}
+
+QFrame#frame_DC_control QLineEdit
+{
+	font-size: 9pt; 
+	color: #000000;
+    background-color: #e7e6e6;
+	max-height: 25px;
+    min-height: 25px;
+}
+
+QFrame#frame_DC_control QTextBrowser
+{
+	font-size: 9pt; 
+	color: #000000;
+    background-color: #e7e6e6;
+	
+}
+
+
+/*****************************************/
+/**********催化裂化界面Form_FCCU**********/
+/*****************************************/
+QWidget#JJSH_Form_FCCU_Monitor
+{
+    background-color: #001239;
+    min-width: 1140px;
+    min-height: 600px;
+}
+
+QWidget#JJSH_Form_FCCU_Monitor QLabel#label_7
+{
+    min-width: 6px;
+	max-width: 6px;
+	background-color: #001239;
+}
+
+QWidget#JJSH_Form_FCCU_Monitor QLabel#label_8
+{
+    min-width: 6px;
+	max-width: 6px;
+	background-color: #001239;
+}
+
+QFrame#frame_FCCU_picture QLabel
+{
+	color: #00ff00;
+	font-size: 7pt;
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_FCCU_picture QPushButton
+{
+	color: #00ff00;
+	font-size: 7pt;
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_FCCU_Monitor
+{
+	color: #e7e6e6;
+    background-color: #001239;
+	max-width: 250px;
+    min-width: 250px;
+    min-height: 600px;
+}
+
+
+QFrame#frame_FCCU_Monitor QPushButton
+{
+	color: #e7e6e6;
+	font-size: 9pt;
+	max-height: 40px;
+    min-height: 40px;
+	min-width: 100px;
+}
+
+QFrame#frame_FCCU_Monitor QLabel
+{
+	font-size: 9pt;
+	max-height: 25px;
+    min-height: 25px;
+	color: #e7e6e6;
+    background-color: #001239;
+}
+
+QFrame#frame_FCCU_Monitor QFrame#frame_N100
+{
+	font-size: 9pt;
+	max-height: 200px;
+    min-height: 80px;
+	color: #e7e6e6;
+    background-color: #001239;
+}
+
+QFrame#frame_FCCU_Monitor QLineEdit
+{
+	font-size: 9pt;
+	color: #000000;
+    background-color: #e7e6e6;
+	max-height: 25px;
+    min-height: 25px;
+}
+
+QFrame#frame_FCCU_Monitor QTextBrowser
+{
+	font-size: 9pt;
+	color: #000000;
+    background-color: #e7e6e6;
+}
+
+QFrame#frame_FCCU_picture
+{
+	border-image: url(":/img/images/FCCU_process.png");
+	min-width: 880px;
+	min-height: 600px;
+}
+
+QFrame#frame_FCCU_picture QLabel
+{
+	color: #00ff00;
+	font-size: 7pt;
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_FCCU_picture QLabel
+{
+	color: #00ff00;
+	font-size: 7pt;
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}
+
+QFrame#frame_FCCU_picture QPushButton
+{
+	color: #00ff00;
+	font-size: 7pt;
+	max-width: 60px;
+	min-width: 60px;
+	max-height: 15px;
+	min-height: 15px;
+}

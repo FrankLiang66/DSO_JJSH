@@ -1,0 +1,20 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/img">
+	<file>./images/login_background.png</file>
+	<file>./images/SJTU_logo0.png</file>
+	<file>./images/SJTU_logo1.png</file>
+	<file>./images/DC_process.png</file>
+	<file>./images/home.png</file>
+	<file>./images/vigilance.png</file>
+	<file>./images/design.png</file>
+	<file>./images/info.png</file>
+	<file>./images/pie-chart.png</file>
+	<file>./images/settings.png</file>
+	<file>./images/minus.png</file>
+	<file>./images/maximize.png</file>
+	<file>./images/normal.png</file>
+	<file>./images/close.png</file>
+		<file>./images/FCCU_process.png</file>
+	</qresource>
+</RCC>
